@@ -6,6 +6,17 @@
     "outDir": "dist",
     "jsx": "preserve",
     "types": ["vite/client"],
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["components/**/*.vue", "examples/**/*.*","layouts/**/*.vue", "setup/*.ts", "utils/*.js", "windi.config.ts", "utils/props.ts"]
+  "include": [
+    "components/**/*.vue",
+    "examples/**/*.*",
+    "layouts/**/*.vue",
+    "setup/*.ts",
+    "utils/*.js",
+    "windi.config.ts",
+    "uno.config.ts",
+    "utils/props.ts"
+  ]
 }

@@ -1,3 +1,7 @@
+# slidev-theme-vuetiful-uno
+
+Update slidev-theme-vuetiful with unocss. Below is original readme:
+
 # slidev-theme-vuetiful
 
 [![NPM version](https://img.shields.io/npm/v/slidev-theme-vuetiful?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-vuetiful)
