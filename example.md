@@ -1,78 +1,136 @@
 ---
 theme: ./
-altCover: true 
----
-asda
----
-level: 2
+clicks: 1
+altCover: false 
 ---
 
-# Shiki Magic Move
+# Vuetiful Theme
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+A Vue-inspired theme for my talks about Vue
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
+---
 
-````md magic-move
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
+# This is the default page
 
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
+it can have a heading, and then you add whatever content your want beneath that.
+
+It can also have two columns, we demo that later in these slides.
+
+* Classic item lists look like this.
+* We have a slide variant with bigger list points to stress them, see later.
+
+---
+layout: section
+---
+
+# This is a section
+
+---
+layout: quote
+author: Linus Borg (2021)
+---
+
+# Big quotes make your talk look fancy
+
+---
+layout: big-points
+title: Need to make a few big points?
+titleRow: true
+---
+
+- Increased font size... <Badge type="warn">Test</Badge>
+- ...and centered content
+- help stressing a few points
+
+--- 
+
+# Code
+
+Use code snippets and get the highlighting directly!
+
+```html
+<template>
+  <h1>Hello World"</h1>
+  <div class="message">{{ message }}</div>
+</template>
+<script>
+  export default {
+    data:() => ({
+      message: 'Great to be here!',
+    })
   }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
 </script>
+<style scoped>
+  .message {
+    color: red;
+  }
+</style>
 ```
-````
+
+---
+layout: video
+video: https://player.vimeo.com/video/455611549
+---
+
+# You can include Video!
+
+---
+layout: sfc
+example: simple
+---
+
+# Firing up a Vue SFC playground
+
+---
+title: Default Slide can show flexible grids
+titleRow: true
+cols: '2-1'
+---
+
+```html
+<template>
+  <h1>Hello World"</h1>
+  <div class="message">{{ message }}</div>
+</template>
+<script>
+  export default {
+    data:() => ({
+      message: 'Great to be here!',
+    })
+  }
+</script>
+<style scoped>
+  .message {
+    color: red;
+  }
+</style>
+```
+
+::right::
+
+## Features
+
+* Flexible column width via windicss
+* Here, more weight on the left
+* Leaves room for short notes
+
+---
+layout: full-image
+image: canyon.jpeg
+---
+
+# You can use a full-screen image without the default decoration
+
+---
+layout: outro 
+title: Outro
+twitter: '@Linus_Borg'
+website: 'https://www.linusb.org'
+repository: 'github.com/linusborg/slidev-theme-vuetiful'
+hostedSlides: 'https://slidev-theme-vuetiful.netlify.app/'
+---
+
+<div class="absolute left-12 top-[200px] right-12 text-center text-light-600">
+  <p class="text-4xl !leading-[1.5em]">Thank you for listening!</p>
+  <!-- <p class="text-4xl !leading-[1.5em]">Questions?</p> -->
+</div>

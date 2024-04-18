@@ -1,5 +1,5 @@
 {
-  "name": "slidev-theme-vuetiful-uno",
+  "name": "slidev-theme-vuetiful-unocss",
   "version": "1.0.0",
   "license": "MIT",
   "author": {
@@ -8,13 +8,13 @@
     "originAuthorName": "Thorsten Lünborg",
     "originAuthorUrl": "https://www.linusb.org"
   },
-  "repository": "https://www.github.com/linusborg/slidev-theme-vuetiful",
+  "repository": "https://github.com/mosuzi/slidev-theme-vuetiful",
   "keywords": [
     "slidev-theme",
     "slidev"
   ],
   "scripts": {
-    "dev": "slidev example.md --open",
+    "dev": "slidev example.md",
     "build": "slidev build example.md",
     "export": "slidev export example.md",
     "screenshot": "slidev export example.md --format png"

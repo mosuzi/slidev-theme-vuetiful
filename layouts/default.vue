@@ -28,7 +28,7 @@ const gridColsSize = computed(() => {
     :class="[titleRow ? 'grid-rows-[60px,1fr]' : null, gridColsSize]"
   >
     <div v-if="titleRow" :class="cols ? 'col-span-2' : null">
-      <h1 class="customTitleRow">{{ $slidev.nav.currentRoute.meta.title }}</h1>
+      <h1 class="customTitleRow">{{ $frontmatter.title }}</h1>
     </div>
     <div>
       <slot />
