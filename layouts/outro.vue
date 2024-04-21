@@ -39,7 +39,7 @@ const twitterUrl = computed(() =>
       </transition>
     </div>
     <h1 v-if="$props.showTitle !== false" class="text-center !text-5xl">
-      {{ $slidev.nav.currentRoute.meta.title }}
+      {{ $frontmatter.title }}
     </h1>
     <div>
       <slot></slot>
